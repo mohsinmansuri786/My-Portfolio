@@ -5,17 +5,13 @@ use PHPMailer\PHPMailer\Exception;
 include 'PHPMailer-master/src/Exception.php';
 include 'PHPMailer-master/src/PHPMailer.php';
 
+
       $name=trim($_POST["name"]);   
       $email= trim($_POST["email"]);
-      $subject= trim($_POST["subject"])
+      $subject= trim($_POST["subject"]);
       $msg1= trim($_POST["message"]);
-  
       
-    
-
-   
-
-      $message = '<html><body>';
+        $message = '<html><body>';
         $message .= "<h1 style='font-family:Arial, Helvetica, sans-serif; font-size:14px'>A inquiry has been received from mohsin site:-</h1>";
         $message .= '<table width="350" rules="all" style="border:1px solid #069;font-family:Arial, Helvetica, sans-serif; font-size:12px" cellpadding="10">';
         $message .= "<tr><td width='115' style='background: #ccc;'><strong>Name: </strong></td><td>" . $name . "</td></tr>";
